@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 180" width="100%" height="180">
+  <defs>
+    <linearGradient id="footerBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080612" />
+      <stop offset="50%" stop-color="#0f0c22" />
+      <stop offset="100%" stop-color="#05040a" />
+    </linearGradient>
+
+    <linearGradient id="neonGlowLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#f43f5e" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .footer-mono {
+      font-family: 'JetBrains Mono', 'Fira Code', monospace;
+    }
+    .footer-title {
+      font-family: 'SF Pro Display', 'Inter', system-ui, sans-serif;
+      font-weight: 900;
+      letter-spacing: 6px;
+    }
+    .kanji-big {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-weight: 900;
+    }
+  </style>
+
+  <!-- Background Base -->
+  <rect width="920" height="180" fill="url(#footerBg)" rx="16" stroke="rgba(168, 85, 247, 0.3)" stroke-width="1.5" />
+
+  <!-- Top Accent Line -->
+  <line x1="20" y1="2" x2="900" y2="2" stroke="url(#neonGlowLine)" stroke-width="2" />
+
+  <!-- Center Kanji Watermark -->
+  <text x="460" y="115" class="kanji-big" font-size="70" text-anchor="middle" fill="#a855f7" opacity="0.08" letter-spacing="24">
+    限界突破
+  </text>
+
+  <!-- Content -->
+  <g text-anchor="middle">
+    <!-- Header -->
+    <text x="460" y="55" class="footer-title" font-size="24" fill="#ffffff">
+      SYSTEM STATUS: ACTIVE &amp; DISPATCH READY
+    </text>
+    <text x="460" y="78" class="footer-mono" font-size="12" fill="#c084fc" letter-spacing="3">
+      [ // OPEN FOR HIGH-IMPACT FULL-STACK &amp; AGENTIC AI ROLES // ]
+    </text>
+
+    <!-- Quote -->
+    <text x="460" y="115" class="footer-mono" font-size="13" fill="#94a3b8">
+      "Deterministic code decides. The generative model only proposes."
+    </text>
+
+    <!-- Subtitle -->
+    <g class="footer-mono" font-size="11" fill="#64748b">
+      <text x="460" y="145">
+        JAIPUR, INDIA · MANIPAL UNIVERSITY JAIPUR '29 · NIKHIL LAKRA
+      </text>
+    </g>
+  </g>
+</svg>
+
