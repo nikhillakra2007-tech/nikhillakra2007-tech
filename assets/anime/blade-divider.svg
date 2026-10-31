@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 24" width="100%" height="100%">
+  <!-- Red Katana Slash Center Line -->
+  <line x1="20" y1="12" x2="980" y2="12" stroke="#2D111A" stroke-width="1" />
+  <line x1="300" y1="12" x2="700" y2="12" stroke="#FF2A55" stroke-width="1.2" />
+
+  <!-- Center Katana Tsuba (Guard) Emblem -->
+  <circle cx="500" cy="12" r="8" fill="#14080D" stroke="#FF2A55" stroke-width="1.2" />
+  <circle cx="500" cy="12" r="3" fill="#FFCC00" />
+
+  <!-- Flanking Maple Leaves -->
+  <polygon points="440,12 446,8 450,12 446,16" fill="#FF2A55" opacity="0.8" />
+  <polygon points="560,12 554,8 550,12 554,16" fill="#FF2A55" opacity="0.8" />
+</svg>
