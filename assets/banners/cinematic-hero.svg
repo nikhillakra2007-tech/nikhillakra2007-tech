@@ -1,0 +1,215 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 450" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <radialGradient id="voidGlow" cx="50%" cy="55%" r="65%">
+      <stop offset="0%" stop-color="#180e36" stop-opacity="0.9" />
+      <stop offset="35%" stop-color="#0f0724" stop-opacity="0.95" />
+      <stop offset="70%" stop-color="#07040f" />
+      <stop offset="100%" stop-color="#030207" />
+    </radialGradient>
+
+    <radialGradient id="characterAura" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#9333ea" stop-opacity="0.75" />
+      <stop offset="45%" stop-color="#6366f1" stop-opacity="0.4" />
+      <stop offset="80%" stop-color="#38bdf8" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <linearGradient id="neonCyanPurple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+
+    <linearGradient id="bladeGlow" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#00f5ff" />
+      <stop offset="50%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#05030a" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Glowing Filters -->
+    <filter id="eyeGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="blur1" />
+      <feGaussianBlur stdDeviation="10" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur2" />
+        <feMergeNode in="blur1" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="flameGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    /* Continuous Looping Animations */
+    @keyframes auraPulse {
+      0%, 100% { transform: scale(1) translateY(0); opacity: 0.75; }
+      50% { transform: scale(1.08) translateY(-6px); opacity: 0.95; }
+    }
+    @keyframes flameDriftLeft {
+      0%, 100% { transform: rotate(0deg) skewX(0deg); }
+      50% { transform: rotate(-3deg) skewX(-4deg); }
+    }
+    @keyframes flameDriftRight {
+      0%, 100% { transform: rotate(0deg) skewX(0deg); }
+      50% { transform: rotate(3deg) skewX(4deg); }
+    }
+    @keyframes eyePulse {
+      0%, 100% { opacity: 0.9; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.25); filter: drop-shadow(0 0 10px #00f5ff); }
+    }
+    @keyframes emberRise1 {
+      0% { transform: translateY(0) translateX(0); opacity: 0; }
+      20% { opacity: 0.9; }
+      80% { opacity: 0.7; }
+      100% { transform: translateY(-160px) translateX(25px); opacity: 0; }
+    }
+    @keyframes emberRise2 {
+      0% { transform: translateY(0) translateX(0); opacity: 0; }
+      20% { opacity: 0.8; }
+      80% { opacity: 0.6; }
+      100% { transform: translateY(-180px) translateX(-30px); opacity: 0; }
+    }
+    @keyframes textShimmer {
+      0%, 100% { opacity: 0.96; }
+      50% { opacity: 1; filter: drop-shadow(0 0 14px rgba(168, 85, 247, 0.65)); }
+    }
+
+    .aura-anim {
+      transform-origin: 470px 210px;
+      animation: auraPulse 6s ease-in-out infinite;
+    }
+    .flame-left {
+      transform-origin: 430px 220px;
+      animation: flameDriftLeft 4.5s ease-in-out infinite;
+    }
+    .flame-right {
+      transform-origin: 510px 220px;
+      animation: flameDriftRight 4.5s ease-in-out infinite 0.7s;
+    }
+    .eye-anim {
+      transform-origin: 470px 172px;
+      animation: eyePulse 2.8s ease-in-out infinite;
+    }
+    .title-anim {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+      font-weight: 900;
+      letter-spacing: 7px;
+      animation: textShimmer 4s ease-in-out infinite;
+    }
+    .sub-font {
+      font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace;
+    }
+  </style>
+
+  <!-- Deep Obsidian Void Background -->
+  <rect width="940" height="450" fill="url(#voidGlow)" rx="20" />
+
+  <!-- Subtle Cyber Floor Grid -->
+  <g opacity="0.18">
+    <line x1="0" y1="410" x2="940" y2="410" stroke="#a855f7" stroke-width="1" />
+    <line x1="0" y1="428" x2="940" y2="428" stroke="#38bdf8" stroke-width="1.2" />
+    <line x1="0" y1="444" x2="940" y2="444" stroke="#c084fc" stroke-width="1.5" />
+    <line x1="470" y1="390" x2="120" y2="450" stroke="#a855f7" stroke-width="1" />
+    <line x1="470" y1="390" x2="280" y2="450" stroke="#a855f7" stroke-width="1" />
+    <line x1="470" y1="390" x2="470" y2="450" stroke="#38bdf8" stroke-width="1" />
+    <line x1="470" y1="390" x2="660" y2="450" stroke="#a855f7" stroke-width="1" />
+    <line x1="470" y1="390" x2="820" y2="450" stroke="#a855f7" stroke-width="1" />
+  </g>
+
+  <!-- Giant Shadow Monarch Core Aura -->
+  <circle cx="470" cy="190" r="190" fill="url(#characterAura)" class="aura-anim" filter="url(#flameGlow)" />
+
+  <!-- Rising Cursed Energy / Shadow Wings (Tendrils) -->
+  <g class="flame-left" filter="url(#flameGlow)">
+    <path d="M 430 230 C 370 190, 310 130, 330 60 C 355 110, 395 150, 420 180 Z" fill="#7c3aed" opacity="0.6" />
+    <path d="M 440 220 C 390 170, 360 100, 395 40 C 410 90, 430 130, 445 170 Z" fill="#9333ea" opacity="0.75" />
+    <path d="M 450 200 C 420 160, 400 90, 435 25 C 445 75, 455 115, 460 160 Z" fill="#38bdf8" opacity="0.8" />
+  </g>
+
+  <g class="flame-right" filter="url(#flameGlow)">
+    <path d="M 510 230 C 570 190, 630 130, 610 60 C 585 110, 545 150, 520 180 Z" fill="#7c3aed" opacity="0.6" />
+    <path d="M 500 220 C 550 170, 580 100, 545 40 C 530 90, 510 130, 495 170 Z" fill="#9333ea" opacity="0.75" />
+    <path d="M 490 200 C 520 160, 540 90, 505 25 C 495 75, 485 115, 480 160 Z" fill="#38bdf8" opacity="0.8" />
+  </g>
+
+  <!-- Anime Protagonist Silhouette (Layered Shadow Cloak & Collar) -->
+  <g transform="translate(470, 195)">
+    <!-- Back Shroud & Shoulders -->
+    <path d="M -95 110 Q -65 50 -35 25 Q 0 10 35 25 Q 65 50 95 110 Q 0 130 -95 110 Z" fill="#080512" />
+    <!-- High anime collar / jacket lapels -->
+    <path d="M -45 55 L -22 15 L -10 35 L -35 75 Z" fill="#130d29" stroke="#9333ea" stroke-width="1.2" />
+    <path d="M 45 55 L 22 15 L 10 35 L 35 75 Z" fill="#130d29" stroke="#9333ea" stroke-width="1.2" />
+
+    <!-- Sleek Face & Chin Silhouette -->
+    <polygon points="0,48 -24,8 -18,-15 18,-15 24,8" fill="#181133" stroke="#38bdf8" stroke-width="0.8" opacity="0.9" />
+
+    <!-- Stylized Spiky Shadow Anime Hair -->
+    <!-- Center bangs -->
+    <path d="M 0 -42 L -8 -10 L 0 -18 L 8 -10 Z" fill="#090514" />
+    <!-- Left spikes -->
+    <path d="M -10 -40 L -28 -18 L -15 -14 L -36 -2 L -18 4 Z" fill="#0c071c" stroke="#a855f7" stroke-width="1" />
+    <!-- Right spikes -->
+    <path d="M 10 -40 L 28 -18 L 15 -14 L 36 -2 L 18 4 Z" fill="#0c071c" stroke="#38bdf8" stroke-width="1" />
+    <!-- Crown hair peak -->
+    <path d="M 0 -58 L -16 -32 L 0 -36 L 16 -32 Z" fill="#150a30" stroke="#c084fc" stroke-width="1" />
+
+    <!-- Glowing Anime Eyes (Electric Blue & Crimson Sparks) -->
+    <g class="eye-anim" filter="url(#eyeGlow)">
+      <!-- Left Eye -->
+      <polygon points="-14,3 -7,0 -12,-3" fill="#00f5ff" />
+      <circle cx="-10" cy="0" r="1.5" fill="#ffffff" />
+      <line x1="-16" y1="2" x2="-26" y2="6" stroke="#00f5ff" stroke-width="1.5" stroke-linecap="round" opacity="0.8" />
+
+      <!-- Right Eye -->
+      <polygon points="14,3 7,0 12,-3" fill="#00f5ff" />
+      <circle cx="10" cy="0" r="1.5" fill="#ffffff" />
+      <line x1="16" y1="2" x2="26" y2="6" stroke="#00f5ff" stroke-width="1.5" stroke-linecap="round" opacity="0.8" />
+    </g>
+
+    <!-- Chest Core Node -->
+    <circle cx="0" cy="72" r="4" fill="#a855f7" filter="url(#eyeGlow)" />
+  </g>
+
+  <!-- Floating Particles & Digital Embers (Rising with continuous CSS loop) -->
+  <g fill="#c084fc">
+    <circle cx="430" cy="270" r="2" opacity="0.8" style="animation: emberRise1 4s infinite linear;" />
+    <circle cx="510" cy="290" r="2.5" opacity="0.7" style="animation: emberRise2 5s infinite linear 1s;" />
+    <circle cx="390" cy="240" r="1.8" opacity="0.8" style="animation: emberRise1 3.5s infinite linear 0.5s;" />
+    <circle cx="550" cy="250" r="2.2" opacity="0.9" style="animation: emberRise2 4.5s infinite linear 2s;" />
+    <circle cx="460" cy="310" r="1.5" opacity="0.85" style="animation: emberRise1 3s infinite linear 1.5s;" />
+    <circle cx="480" cy="260" r="2" opacity="0.75" style="animation: emberRise2 3.8s infinite linear 0.8s;" />
+  </g>
+
+  <!-- Foreground Typography (Clean, Minimal, English Exclusively) -->
+  <g text-anchor="middle">
+    <!-- Prominent Name -->
+    <text x="470" y="348" class="title-anim" font-size="46" fill="#ffffff">
+      NIKHIL LAKRA
+    </text>
+
+    <!-- Glowing Accent Divider -->
+    <line x1="330" y1="365" x2="610" y2="365" stroke="url(#neonCyanPurple)" stroke-width="2" />
+    <circle cx="470" cy="365" r="3.5" fill="#00f5ff" />
+
+    <!-- Subtitle -->
+    <text x="470" y="392" class="sub-font" font-size="15" font-weight="600" fill="#c084fc" letter-spacing="3">
+      Full-Stack Developer | AI Engineer
+    </text>
+
+    <!-- Tagline -->
+    <text x="470" y="418" class="sub-font" font-size="13" font-weight="400" fill="#94a3b8" letter-spacing="2">
+      Building things that feel impossible.
+    </text>
+  </g>
+
+  <!-- Clean Border Outline -->
+  <rect x="2" y="2" width="936" height="446" rx="19" fill="none" stroke="rgba(168, 85, 247, 0.4)" stroke-width="1.5" />
+</svg>

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 140" width="100%" height="100%">
+  <defs>
+    <linearGradient id="finGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1a1f" />
+      <stop offset="60%" stop-color="#071217" />
+      <stop offset="100%" stop-color="#03090c" />
+    </linearGradient>
+    <linearGradient id="finGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#34d399" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .card-title { font-family: 'Inter', -apple-system, sans-serif; font-weight: 800; font-size: 22px; fill: #ffffff; }
+    .card-sub { font-family: 'JetBrains Mono', Consolas, monospace; font-size: 13px; fill: #94a3b8; }
+    .card-tag { font-family: 'JetBrains Mono', Consolas, monospace; font-size: 11px; font-weight: 700; fill: #38bdf8; letter-spacing: 1.5px; }
+    .btn-text { font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 700; fill: #ffffff; letter-spacing: 1px; }
+  </style>
+
+  <!-- Card Background -->
+  <rect width="880" height="140" rx="14" fill="url(#finGrad)" stroke="rgba(56, 189, 248, 0.45)" stroke-width="1.5" />
+  
+  <!-- Left Accent Bar -->
+  <rect x="0" y="0" width="6" height="140" rx="3" fill="url(#finGlow)" />
+
+  <!-- Vault Diamond Icon -->
+  <g transform="translate(35, 38)">
+    <polygon points="28,4 52,18 52,46 28,60 4,46 4,18" fill="#0c232a" stroke="#38bdf8" stroke-width="1.8" />
+    <circle cx="28" cy="32" r="9" fill="none" stroke="#34d399" stroke-width="2" />
+    <text x="28" y="36" font-family="monospace" font-size="12" font-weight="900" fill="#ffffff" text-anchor="middle">$</text>
+  </g>
+
+  <!-- Project Info -->
+  <text x="110" y="44" class="card-tag">FINANCIAL PLATFORMS &amp; CORE BACKEND</text>
+  <text x="110" y="74" class="card-title">FINROQ</text>
+  <text x="110" y="102" class="card-sub">Zero-float discrepancy double-entry ledger platform enforcing mathematical balance sheet invariants.</text>
+
+  <!-- Badges / Indicators -->
+  <g transform="translate(680, 48)">
+    <rect width="165" height="30" rx="6" fill="#0d252b" stroke="#38bdf8" stroke-width="1" />
+    <circle cx="16" cy="15" r="4" fill="#38bdf8" />
+    <text x="28" y="19" class="btn-text">334 TEST SUITES</text>
+  </g>
+</svg>
