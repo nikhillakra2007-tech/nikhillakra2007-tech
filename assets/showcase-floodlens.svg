@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="floodlensBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080e1a" />
+      <stop offset="100%" stop-color="#0c1424" />
+    </linearGradient>
+    <linearGradient id="cobaltBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1f6feb" />
+      <stop offset="100%" stop-color="#58a6ff" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .mono { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "SF Mono", Menlo, Consolas, monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .p-title { font-size: 26px; font-weight: 800; fill: #f0f6fc; letter-spacing: -0.01em; }
+    .p-badge { font-size: 10px; font-weight: 700; fill: #58a6ff; letter-spacing: 0.15em; text-transform: uppercase; }
+    .p-desc { font-size: 13.5px; fill: #c9d1d9; line-height: 1.5; }
+    .tech-pill { font-size: 11px; fill: #79c0ff; font-weight: 500; }
+  </style>
+
+  <!-- Container -->
+  <rect width="900" height="240" rx="6" fill="url(#floodlensBg)" stroke="#30363d" stroke-width="1" />
+  
+  <!-- Left Accent Line -->
+  <rect x="0" y="0" width="4" height="240" rx="2" fill="url(#cobaltBar)" />
+
+  <!-- Left Content -->
+  <g transform="translate(36, 32)">
+    <g class="mono">
+      <rect x="0" y="0" width="198" height="20" rx="3" fill="#1f6feb" fill-opacity="0.15" stroke="#388bfd" stroke-width="0.7" />
+      <text x="10" y="14" class="p-badge">GEOSPATIAL &amp; CLOUD SYSTEMS</text>
+    </g>
+
+    <text x="0" y="52" class="sans p-title">FloodLens</text>
+    <text x="0" y="76" class="sans p-desc" width="480">An evidence-driven urban flood investigation platform modeling counterfactual stormwater mechanisms.</text>
+    <text x="0" y="96" class="sans p-desc" fill="#8b949e">Pairs inundated municipal catchments with resilient twin wards across elevation gradients, stormwater</text>
+    <text x="0" y="114" class="sans p-desc" fill="#8b949e">drain dimensions, and impervious surface ratios to assess infrastructure interventions before cloudbursts strike.</text>
+
+    <!-- Tech Stack Row -->
+    <g transform="translate(0, 142)" class="mono">
+      <text x="0" y="12" font-size="10" fill="#8b949e" letter-spacing="0.1em">ENGINEERED WITH:</text>
+      <rect x="110" y="0" width="94" height="20" rx="3" fill="#161b22" stroke="#30363d" stroke-width="0.7" />
+      <text x="120" y="14" class="tech-pill">AWS Lambda</text>
+
+      <rect x="212" y="0" width="134" height="20" rx="3" fill="#161b22" stroke="#30363d" stroke-width="0.7" />
+      <text x="222" y="14" class="tech-pill">CloudFormation IaC</text>
+
+      <rect x="354" y="0" width="76" height="20" rx="3" fill="#161b22" stroke="#30363d" stroke-width="0.7" />
+      <text x="364" y="14" class="tech-pill">PostGIS</text>
+
+      <rect x="438" y="0" width="92" height="20" rx="3" fill="#161b22" stroke="#30363d" stroke-width="0.7" />
+      <text x="448" y="14" class="tech-pill">Python 3.12</text>
+
+      <rect x="538" y="0" width="72" height="20" rx="3" fill="#161b22" stroke="#30363d" stroke-width="0.7" />
+      <text x="548" y="14" class="tech-pill">Docker</text>
+    </g>
+  </g>
+
+  <!-- Right Architecture Card -->
+  <g transform="translate(590, 24)">
+    <rect x="0" y="0" width="280" height="192" rx="4" fill="#0d1117" stroke="#30363d" stroke-width="1" />
+    <rect x="0" y="0" width="280" height="24" rx="4" fill="#161b22" />
+    <text x="12" y="16" class="mono" font-size="10" fill="#8b949e">HYDROLOGICAL PIPELINE</text>
+    
+    <g class="mono" transform="translate(14, 38)" font-size="11">
+      <text x="0" y="14" fill="#79c0ff">✓ PostGIS Spatial Buffering</text>
+      <text x="0" y="32" fill="#8b949e" font-size="9.5">Digital Elevation Model (DEM) transforms</text>
+
+      <line x1="0" y1="44" x2="252" y2="44" stroke="#21262d" stroke-width="1" />
+
+      <text x="0" y="60" fill="#79c0ff">✓ AWS CloudFormation IaC</text>
+      <text x="0" y="78" fill="#8b949e" font-size="9.5">100% Reproducible serverless infrastructure</text>
+
+      <line x1="0" y1="90" x2="252" y2="90" stroke="#21262d" stroke-width="1" />
+
+      <text x="0" y="106" fill="#79c0ff">✓ Evaluated: Scored 27 / 30</text>
+      <text x="0" y="124" fill="#8b949e" font-size="9.5">AWS Environmental Hackathon (8/8 · 4/4 · 4/4)</text>
+    </g>
+  </g>
+</svg>
+

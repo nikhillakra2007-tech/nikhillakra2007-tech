@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080c14" />
+      <stop offset="60%" stop-color="#0d111a" />
+      <stop offset="100%" stop-color="#111622" />
+    </linearGradient>
+
+    <!-- Cobalt Accent Glow -->
+    <linearGradient id="cobaltGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2f81f7" />
+      <stop offset="100%" stop-color="#58a6ff" />
+    </linearGradient>
+
+    <!-- Subtle Radial Ambience -->
+    <radialGradient id="radialGlow" cx="80%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#1f6feb" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#1f6feb" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="techGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#30363d" stroke-width="0.5" stroke-opacity="0.4" />
+      <circle cx="0" cy="0" r="1" fill="#58a6ff" fill-opacity="0.3" />
+    </pattern>
+  </defs>
+
+  <style>
+    .mono { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "SF Mono", Menlo, Consolas, monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .label { font-size: 11px; letter-spacing: 0.18em; fill: #8b949e; text-transform: uppercase; font-weight: 500; }
+    .title { font-size: 46px; font-weight: 800; letter-spacing: -0.02em; fill: #f0f6fc; }
+    .subtitle { font-size: 15px; font-weight: 500; letter-spacing: 0.05em; fill: #58a6ff; }
+    .desc { font-size: 14px; font-weight: 400; fill: #c9d1d9; letter-spacing: 0.01em; }
+    .stat-val { font-size: 13px; font-weight: 700; fill: #f0f6fc; }
+    .stat-lbl { font-size: 10px; font-weight: 500; fill: #8b949e; letter-spacing: 0.12em; text-transform: uppercase; }
+  </style>
+
+  <!-- Base Canvas -->
+  <rect width="1200" height="340" fill="url(#bgGrad)" />
+  <rect width="1200" height="340" fill="url(#techGrid)" />
+  <rect width="1200" height="340" fill="url(#radialGlow)" />
+
+  <!-- Outer Architectural Border -->
+  <rect x="16" y="16" width="1168" height="308" fill="none" stroke="#30363d" stroke-width="1" />
+  
+  <!-- Corner Precision Crosshairs -->
+  <g stroke="#58a6ff" stroke-width="1.2" opacity="0.8">
+    <!-- Top-Left -->
+    <line x1="10" y1="16" x2="22" y2="16" />
+    <line x1="16" y1="10" x2="16" y2="22" />
+    <!-- Top-Right -->
+    <line x1="1178" y1="16" x2="1190" y2="16" />
+    <line x1="1184" y1="10" x2="1184" y2="22" />
+    <!-- Bottom-Left -->
+    <line x1="10" y1="324" x2="22" y2="324" />
+    <line x1="16" y1="318" x2="16" y2="330" />
+    <!-- Bottom-Right -->
+    <line x1="1178" y1="324" x2="1190" y2="324" />
+    <line x1="1184" y1="318" x2="1184" y2="330" />
+  </g>
+
+  <!-- Top Metadata Bar -->
+  <g class="mono">
+    <text x="44" y="52" class="label">STUDIO SPEC // SYSTEM ARCHITECTURE &amp; PRODUCT ENGINEERING</text>
+    <text x="1156" y="52" text-anchor="end" class="label">ORBIT: 26.91° N, 75.78° E · JAIPUR, IN</text>
+  </g>
+  <line x1="44" y1="66" x2="1156" y2="66" stroke="#21262d" stroke-width="1" />
+
+  <!-- Main Identity Hero -->
+  <g transform="translate(44, 95)">
+    <!-- Identity Badge -->
+    <rect x="0" y="0" width="148" height="24" rx="3" fill="#1f6feb" fill-opacity="0.15" stroke="#388bfd" stroke-width="0.8" />
+    <circle cx="12" cy="12" r="3.5" fill="#3fb950" />
+    <text x="24" y="16" class="mono" font-size="10.5" font-weight="600" fill="#79c0ff" letter-spacing="0.1em">SYSTEM ONLINE</text>
+
+    <!-- Name -->
+    <text x="0" y="68" class="sans title">NIKHIL LAKRA</text>
+
+    <!-- Subtitle / Positioning -->
+    <text x="0" y="98" class="sans subtitle">Full-Stack Developer &amp; Systems Builder</text>
+    <text x="0" y="122" class="sans desc">Designing, engineering, and building complete software products from first principles.</text>
+    <text x="0" y="142" class="sans desc" fill="#8b949e">Focused on the intersection of autonomous agentic AI, deterministic backends, and reliable infrastructure.</text>
+  </g>
+
+  <!-- Right Architectural Blueprint / System Diagram Motif -->
+  <g transform="translate(820, 95)">
+    <!-- Architectural Frame -->
+    <rect x="0" y="0" width="336" height="150" rx="4" fill="#0d1117" stroke="#30363d" stroke-width="1" />
+    <rect x="0" y="0" width="336" height="24" rx="4" fill="#161b22" />
+    <circle cx="14" cy="12" r="3" fill="#f85149" />
+    <circle cx="26" cy="12" r="3" fill="#d29922" />
+    <circle cx="38" cy="12" r="3" fill="#3fb950" />
+    <text x="56" y="16" class="mono" font-size="10" fill="#8b949e" letter-spacing="0.08em">SYSTEM_CORE // INVARIANTS</text>
+
+    <!-- Mini System Nodes -->
+    <g class="mono" font-size="10.5">
+      <!-- Node 1: Deterministic Gates -->
+      <rect x="18" y="38" width="140" height="42" rx="3" fill="#161b22" stroke="#388bfd" stroke-width="0.8" />
+      <text x="28" y="55" fill="#79c0ff" font-weight="600">01. AST GATES</text>
+      <text x="28" y="70" fill="#8b949e" font-size="9">Compiler Validation</text>
+
+      <!-- Node 2: Immutable Ledgers -->
+      <rect x="178" y="38" width="140" height="42" rx="3" fill="#161b22" stroke="#3fb950" stroke-width="0.8" />
+      <text x="188" y="55" fill="#56d364" font-weight="600">02. ZERO-FLOAT</text>
+      <text x="188" y="70" fill="#8b949e" font-size="9">Double-Entry Core</text>
+
+      <!-- Connecting Data Stream Line -->
+      <line x1="88" y1="80" x2="88" y2="94" stroke="#58a6ff" stroke-width="1" stroke-dasharray="3 2" />
+      <line x1="248" y1="80" x2="248" y2="94" stroke="#56d364" stroke-width="1" stroke-dasharray="3 2" />
+      <line x1="88" y1="94" x2="248" y2="94" stroke="#30363d" stroke-width="1" />
+
+      <!-- Node 3: Synthesized Output -->
+      <rect x="58" y="100" width="220" height="36" rx="3" fill="#1c2128" stroke="#d29922" stroke-width="0.8" />
+      <text x="70" y="116" fill="#e3b341" font-weight="600">03. PROVABLE AUDIT TRAIL</text>
+      <text x="70" y="129" fill="#8b949e" font-size="9">HMAC-SHA256 &amp; CloudFormation IaC</text>
+    </g>
+  </g>
+
+  <!-- Bottom Divider Line -->
+  <line x1="44" y1="268" x2="1156" y2="268" stroke="#21262d" stroke-width="1" />
+
+  <!-- Bottom Credentials & Orbit Strip -->
+  <g transform="translate(44, 296)" class="mono">
+    <!-- Stat 1 -->
+    <g transform="translate(0, 0)">
+      <text x="0" y="0" class="stat-lbl">PRIMARY INSTITUTION</text>
+      <text x="0" y="16" class="stat-val">Manipal University Jaipur · B.Tech CSE '29</text>
+    </g>
+
+    <!-- Vertical separator -->
+    <line x1="330" y1="-8" x2="330" y2="20" stroke="#21262d" stroke-width="1" />
+
+    <!-- Stat 2 -->
+    <g transform="translate(360, 0)">
+      <text x="0" y="0" class="stat-lbl">CORE DISCIPLINES</text>
+      <text x="0" y="16" class="stat-val">Autonomous Agents · Compiler ASTs · Distributed Backends</text>
+    </g>
+
+    <!-- Vertical separator -->
+    <line x1="820" y1="-8" x2="820" y2="20" stroke="#21262d" stroke-width="1" />
+
+    <!-- Stat 3 -->
+    <g transform="translate(850, 0)">
+      <text x="0" y="0" class="stat-lbl">SYSTEM STANCE</text>
+      <text x="0" y="16" class="stat-val" fill="#79c0ff">Deterministic Verification Over Hallucination</text>
+    </g>
+  </g>
+</svg>
+

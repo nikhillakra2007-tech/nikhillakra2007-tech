@@ -1,123 +1,135 @@
 <div align="center">
 
-<!-- CINEMATIC ANIME HERO -->
-<img src="./assets/banners/cinematic-hero.svg" alt="Nikhil Lakra — Cinematic Shadow Developer" width="100%" />
+<!-- HERO BANNER -->
+<img src="./assets/hero-studio.svg" alt="Nikhil Lakra — The Engineering Studio" width="100%" />
 
-<br/><br/>
+<br /><br />
 
-<!-- QUICK ACCESS LINKS -->
-<p align="center">
-  <a href="https://myself-lyart-theta.vercel.app">
-    <img src="https://img.shields.io/badge/PORTFOLIO-myself--lyart--theta.vercel.app-00F5FF?style=for-the-badge&logo=vercel&logoColor=white&labelColor=080512&color=A855F7" alt="Portfolio" />
-  </a>
-  &nbsp;
-  <a href="https://linkedin.com/in/nikhil-lakra-b4300a381">
-    <img src="https://img.shields.io/badge/LINKEDIN-nikhil--lakra-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=080512&color=38BDF8" alt="LinkedIn" />
-  </a>
-  &nbsp;
-  <a href="mailto:nikhillakra2007@gmail.com">
-    <img src="https://img.shields.io/badge/EMAIL-nikhillakra2007%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=080512&color=FF0055" alt="Email" />
-  </a>
-  &nbsp;
-  <a href="https://github.com/nikhillakra2007-tech">
-    <img src="https://img.shields.io/badge/GITHUB-nikhillakra2007--tech-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=080512&color=C084FC" alt="GitHub" />
-  </a>
-</p>
+<!-- NAVIGATION PILLS -->
+<a href="https://myself-lyart-theta.vercel.app/"><b>Portfolio</b></a> &nbsp;•&nbsp;
+<a href="https://linkedin.com/in/nikhil-lakra"><b>LinkedIn</b></a> &nbsp;•&nbsp;
+<a href="https://github.com/nikhillakra2007-tech"><b>GitHub</b></a> &nbsp;•&nbsp;
+<a href="mailto:nikhillakra2007@gmail.com"><b>Contact</b></a>
 
-<br/>
-<img src="./assets/dividers/cyber-divider.svg" width="100%" />
-<br/><br/>
+<br /><br />
+
+<img src="./assets/editorial-divider.svg" alt="Divider" width="100%" />
 
 </div>
 
-## ABOUT
+## 01 / IDENTITY
 
-> **B.Tech Computer Science student at Manipal University Jaipur ('29)** building full-stack applications, distributed backend services, and evidence-grounded AI systems. Focused on deterministic compiler verification, zero-float financial ledgers, and low-latency telemetry pipelines. Operating under one core principle:
+> **"Full-stack developer building AI-powered products and reliable software systems."**
 > 
-> *“Deterministic code decides. The generative model only proposes.”*
+> *Interested in the intersection of product engineering, intelligent systems, and infrastructure.*
 
-<br/>
+I am **Nikhil Lakra**, a developer and B.Tech student in Computer Science ('29) at Manipal University Jaipur. 
 
-<div align="center">
-<img src="./assets/dividers/cyber-divider.svg" width="100%" />
-</div>
+My work centers on designing, engineering, and building complete software products from first principles. Rather than building isolated demos, I focus on the full lifecycle of software engineering: strict database schemas and transaction isolation, deterministic backend services, autonomous agentic AI workflows, and thoughtful user-facing product experiences.
 
-<br/>
+---
 
-## FEATURED PROJECTS
+## 02 / SELECTED WORK
 
-<div align="center">
+A selection of three flagship systems engineered across financial architecture, geospatial cloud infrastructure, and autonomous DevSecOps.
 
-<!-- PROJECT 1: PROOFSTACK -->
-<a href="https://github.com/nikhillakra2007-tech/ProofStack">
-  <img src="./assets/banners/card-proofstack.svg" alt="ProofStack" width="100%" />
-</a>
+<br />
 
-<p align="left">
-  Autonomous DevSecOps engine enforcing 8 compiler AST gates, 12-vector live microVM DAST, and an HMAC-SHA256 Merkle evidence ledger.<br/>
-  <b>Tech:</b> <code>Python 3.12</code> · <code>NVIDIA Nemotron</code> · <code>Tree-sitter AST</code> · <code>FastAPI</code> · <code>Next.js 14</code><br/>
-  🔗 <a href="https://github.com/nikhillakra2007-tech/ProofStack"><b>GitHub Repository</b></a> &nbsp;|&nbsp; 🌐 <a href="https://proofstack-cockpit.vercel.app/"><b>Live Cockpit</b></a>
-</p>
+### 01 · FINROQ — Core Accounting Backend & Personal Finance Engine
 
-<br/>
-
-<!-- PROJECT 2: FINROQ -->
 <a href="https://github.com/nikhillakra2007-tech/finroq">
-  <img src="./assets/banners/card-finroq.svg" alt="FINROQ" width="100%" />
+  <img src="./assets/showcase-finroq.svg" alt="FINROQ Project Showcase" width="100%" />
 </a>
 
-<p align="left">
-  Zero-float discrepancy core accounting platform enforcing mathematical balance sheet invariants across 334 automated test suites.<br/>
-  <b>Tech:</b> <code>Python Decimal</code> · <code>FastAPI</code> · <code>PostgreSQL 16</code> · <code>SQLAlchemy 2.0</code> · <code>Next.js 14</code><br/>
-  🔗 <a href="https://github.com/nikhillakra2007-tech/finroq"><b>GitHub Repository</b></a> &nbsp;|&nbsp; 🌐 <a href="https://finroq-app.vercel.app/"><b>Live Platform</b></a>
-</p>
+* **Core Focus:** An AI-first personal finance platform engineered to make complex fiscal decisions transparent and verifiable.
+* **Engineering Highlights:**
+  * Eliminates IEEE-754 floating-point drift across 17 unified modules by enforcing strict arbitrary-precision `Python Decimal` arithmetic at the database transaction layer.
+  * Backed by DeepSeek-R1 analytical reasoning agents for contextual financial insights, Argon2id cryptographic password derivation, and immutable audit journals.
+  * Automated migration lifecycle managed through versioned Alembic revisions and 247/247 passing Pytest backend validation suites.
+* **Stack:** `Python Decimal` · `FastAPI` · `PostgreSQL 16` · `SQLAlchemy` · `Alembic` · `Next.js 14` · `Docker`
+* **Links:** [GitHub Repository](https://github.com/nikhillakra2007-tech/finroq) &nbsp;|&nbsp; [Live Application](https://finroq-app.vercel.app/)
 
-<br/>
+<br />
 
-<!-- PROJECT 3: FLOODLENS -->
+### 02 · FloodLens — Geospatial Urban Hydrology & Intervention Engine
+
 <a href="https://github.com/nikhillakra2007-tech/FloodLens">
-  <img src="./assets/banners/card-floodlens.svg" alt="FloodLens" width="100%" />
+  <img src="./assets/showcase-floodlens.svg" alt="FloodLens Project Showcase" width="100%" />
 </a>
 
-<p align="left">
-  Evidence-driven urban hydrology platform modeling counterfactual stormwater infrastructure interventions (Scored <b>27/30</b> in AWS Environmental Hackathon).<br/>
-  <b>Tech:</b> <code>AWS Lambda</code> · <code>CloudFormation IaC</code> · <code>Python 3.12</code> · <code>PostGIS</code> · <code>Docker</code><br/>
-  🔗 <a href="https://github.com/nikhillakra2007-tech/FloodLens"><b>GitHub Repository</b></a> &nbsp;|&nbsp; 🌐 <a href="https://floodlens-app.vercel.app/"><b>Live Application</b></a>
-</p>
+* **Core Focus:** An evidence-driven urban flood investigation platform that models counterfactual stormwater mechanisms before cloudburst events occur.
+* **Engineering Highlights:**
+  * Pairs inundated municipal catchments with resilient twin wards across elevation gradients, stormwater drain (SWD) conduit dimensions, and impervious surface ratios.
+  * Distributed serverless backend with stateless AWS Lambda workers executing chunked Digital Elevation Model (DEM) transforms and spatial buffering in PostGIS.
+  * Built with 100% reproducible AWS CloudFormation Infrastructure as Code (IaC) templates and calibrated against historical urban inundation data.
+  * **Evaluation Record:** Scored **27 / 30** in the *AWS Environmental Hackathon* (Idea & Impact: 8/8 · Execution: 4/4 · Design: 4/4).
+* **Stack:** `AWS Lambda` · `CloudFormation IaC` · `PostGIS` · `PostgreSQL` · `Python 3.12` · `Next.js 14` · `Docker`
+* **Links:** [GitHub Repository](https://github.com/nikhillakra2007-tech/FloodLens) &nbsp;|&nbsp; [Live Application](https://floodlens-app.vercel.app/)
 
-</div>
+<br />
 
-<br/>
+### 03 · ProofStack — Autonomous DevSecOps & Code Repair Harness
 
-<div align="center">
-<img src="./assets/dividers/cyber-divider.svg" width="100%" />
-</div>
+<a href="https://github.com/nikhillakra2007-tech/ProofStack">
+  <img src="./assets/showcase-proofstack.svg" alt="ProofStack Project Showcase" width="100%" />
+</a>
 
-<br/>
+* **Core Focus:** An autonomous DevSecOps and code repair verification engine enforcing the rule: *"Deterministic Code Decides; The Generative Model Only Proposes."*
+* **Engineering Highlights:**
+  * Guards pull requests with 8 zero-compromise compiler AST validation passes and 12-vector dynamic analysis (DAST) inside isolated microVM sandboxes.
+  * Couples NVIDIA Nemotron scoped repair loops with an immutable append-only HMAC-SHA256 Merkle evidence ledger to guarantee audit non-repudiation.
+  * Prevents stochastic LLM code hallucinations from reaching production environments without passing deterministic static and dynamic verification gates.
+* **Stack:** `Python 3.12` · `NVIDIA Nemotron` · `Compiler AST Parsing` · `MicroVM DAST` · `Merkle Trees` · `FastAPI` · `Next.js 14`
+* **Links:** [GitHub Repository](https://github.com/nikhillakra2007-tech/ProofStack) &nbsp;|&nbsp; [Live Cockpit](https://proofstack-cockpit.vercel.app/)
 
-## TECHNOLOGIES
-
-<div align="center">
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![Next.js](https://img.shields.io/badge/Next.js_14-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS_Lambda-FF9900?style=for-the-badge&logo=amazonwebservices&logoColor=white)
-![NVIDIA](https://img.shields.io/badge/NVIDIA_Nemotron-76B900?style=for-the-badge&logo=nvidia&logoColor=white)
-![Tailwind](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
-
-</div>
-
-<br/>
+<br />
 
 <div align="center">
-<img src="./assets/dividers/cyber-divider.svg" width="100%" />
-<br/><br/>
+  <img src="./assets/editorial-divider.svg" alt="Divider" width="100%" />
+</div>
 
-<sub>Nikhil Lakra &bull; 2026 &bull; Jaipur, India</sub>
+## 03 / ENGINEERING APPROACH
 
+How I think about building software and systems:
+
+<br />
+
+<img src="./assets/architecture-diagram.svg" alt="System Architecture Approach Diagram" width="100%" />
+
+<br />
+
+1. **Build complete systems, not disconnected demos.** Engineering value lives in complete lifecycles: clean data models, transaction isolation, error handling, performance bounds, and production deployment rather than throwaway prototypes.
+2. **Treat database design and backend architecture as first-class concerns.** Correct persistence boundaries (PostgreSQL, PostGIS spatial indexing, arbitrary-precision Decimal arithmetic, connection pooling) prevent architectural debt before user-facing layers are built.
+3. **Prioritize reliability, verification, and maintainability.** Generative models propose candidate changes; compiler ASTs, type systems, and deterministic test harnesses hold veto authority.
+4. **Combine user experience with technical depth.** A reliable distributed system deserves a clear, responsive interface. Latency bounds, visual hierarchy, and performance matter as much as backend algorithmic correctness.
+5. **Experiment with AI where it creates real utility.** Focus on scoped reasoning loops, structured tool execution, and deterministic validation where intelligent systems solve concrete problems.
+
+---
+
+## 04 / CURRENT EXPLORATION
+
+Topics and architectures currently under active study and prototyping:
+
+* **Autonomous Software Verification & Compiler ASTs:** Exploring deeper AST traversal passes and isolated sandboxes to safely analyze and constrain AI-generated code mutations.
+* **Agentic AI Orchestration:** Investigating multi-agent decomposition patterns, tool-calling validation, and verifiable execution pipelines.
+* **High-Throughput Streaming Telemetry:** Prototyping real-time GTFS-Realtime protocol ingestion with sub-150ms sliding-window headway calculations to detect transit bottlenecks before stoppages occur.
+* **Geospatial & Hydrological Modeling:** Refining counterfactual infrastructure intervention models with vector tile streaming and distributed elevation data pipelines.
+
+---
+
+## 05 / CONNECT
+
+Have an interesting problem to solve or something worth building? Let's connect.
+
+* **Portfolio:** [myself-lyart-theta.vercel.app](https://myself-lyart-theta.vercel.app/)
+* **LinkedIn:** [linkedin.com/in/nikhil-lakra](https://linkedin.com/in/nikhil-lakra)
+* **GitHub:** [github.com/nikhillakra2007-tech](https://github.com/nikhillakra2007-tech)
+* **Email:** [nikhillakra2007@gmail.com](mailto:nikhillakra2007@gmail.com)
+
+<br />
+
+<div align="center">
+  <img src="./assets/editorial-divider.svg" alt="Divider" width="100%" />
+  <br />
+  <sub>NIKHIL LAKRA // THE ENGINEERING STUDIO · 2026</sub>
 </div>

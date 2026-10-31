@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="proofstackBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#120e0a" />
+      <stop offset="100%" stop-color="#1c140d" />
+    </linearGradient>
+    <linearGradient id="amberBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#b08800" />
+      <stop offset="100%" stop-color="#d29922" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .mono { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "SF Mono", Menlo, Consolas, monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .p-title { font-size: 26px; font-weight: 800; fill: #f0f6fc; letter-spacing: -0.01em; }
+    .p-badge { font-size: 10px; font-weight: 700; fill: #d29922; letter-spacing: 0.15em; text-transform: uppercase; }
+    .p-desc { font-size: 13.5px; fill: #c9d1d9; line-height: 1.5; }
+    .tech-pill { font-size: 11px; fill: #e3b341; font-weight: 500; }
+  </style>
+
+  <!-- Container -->
+  <rect width="900" height="240" rx="6" fill="url(#proofstackBg)" stroke="#30363d" stroke-width="1" />
+  
+  <!-- Left Accent Line -->
+  <rect x="0" y="0" width="4" height="240" rx="2" fill="url(#amberBar)" />
+
+  <!-- Left Content -->
+  <g transform="translate(36, 32)">
+    <g class="mono">
+      <rect x="0" y="0" width="220" height="20" rx="3" fill="#9e6a03" fill-opacity="0.15" stroke="#bb8009" stroke-width="0.7" />
+      <text x="10" y="14" class="p-badge">AUTONOMOUS DEVSECOPS &amp; REPAIR</text>
+    </g>
+
+    <text x="0" y="52" class="sans p-title">ProofStack</text>
+    <text x="0" y="76" class="sans p-desc" width="480">An autonomous DevSecOps engine enforcing: "Deterministic Code Decides; Models Only Propose."</text>
+    <text x="0" y="96" class="sans p-desc" fill="#8b949e">Enforces 8 zero-compromise compiler AST gates, 12-vector live microVM dynamic analysis (DAST),</text>
+    <text x="0" y="114" class="sans p-desc" fill="#8b949e">NVIDIA Nemotron scoped repair loops, and an immutable append-only HMAC-SHA256 Merkle evidence ledger.</text>
+
+    <!-- Tech Stack Row -->
+    <g transform="translate(0, 142)" class="mono">
+      <text x="0" y="12" font-size="10" fill="#8b949e" letter-spacing="0.1em">ENGINEERED WITH:</text>
+      <rect x="110" y="0" width="130" height="20" rx="3" fill="#161b22" stroke="#30363d" stroke-width="0.7" />
+      <text x="120" y="14" class="tech-pill">NVIDIA Nemotron</text>
+
+      <rect x="248" y="0" width="112" height="20" rx="3" fill="#161b22" stroke="#30363d" stroke-width="0.7" />
+      <text x="258" y="14" class="tech-pill">Compiler ASTs</text>
+
+      <rect x="368" y="0" width="112" height="20" rx="3" fill="#161b22" stroke="#30363d" stroke-width="0.7" />
+      <text x="378" y="14" class="tech-pill">MicroVM DAST</text>
+
+      <rect x="488" y="0" width="102" height="20" rx="3" fill="#161b22" stroke="#30363d" stroke-width="0.7" />
+      <text x="498" y="14" class="tech-pill">Merkle Trees</text>
+    </g>
+  </g>
+
+  <!-- Right Architecture Card -->
+  <g transform="translate(590, 24)">
+    <rect x="0" y="0" width="280" height="192" rx="4" fill="#0d1117" stroke="#30363d" stroke-width="1" />
+    <rect x="0" y="0" width="280" height="24" rx="4" fill="#161b22" />
+    <text x="12" y="16" class="mono" font-size="10" fill="#8b949e">VERIFICATION BOUNDARIES</text>
+    
+    <g class="mono" transform="translate(14, 38)" font-size="11">
+      <text x="0" y="14" fill="#e3b341">✓ 8 Compiler AST Gates</text>
+      <text x="0" y="32" fill="#8b949e" font-size="9.5">Strict syntactic &amp; semantic invariants</text>
+
+      <line x1="0" y1="44" x2="252" y2="44" stroke="#21262d" stroke-width="1" />
+
+      <text x="0" y="60" fill="#e3b341">✓ MicroVM Dynamic Sandboxing</text>
+      <text x="0" y="78" fill="#8b949e" font-size="9.5">12 Live runtime vulnerability vectors</text>
+
+      <line x1="0" y1="90" x2="252" y2="90" stroke="#21262d" stroke-width="1" />
+
+      <text x="0" y="106" fill="#e3b341">✓ HMAC-SHA256 Merkle Ledger</text>
+      <text x="0" y="124" fill="#8b949e" font-size="9.5">Cryptographic non-repudiation proof</text>
+    </g>
+  </g>
+</svg>
+
