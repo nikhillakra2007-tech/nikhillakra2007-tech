@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 24" width="100%" height="100%">
+  <!-- Center technical divider line -->
+  <line x1="40" y1="12" x2="960" y2="12" stroke="#252A34" stroke-width="1" />
+  <line x1="380" y1="12" x2="620" y2="12" stroke="#3A4150" stroke-width="1" />
+
+  <!-- Left tick cluster -->
+  <line x1="40" y1="6" x2="40" y2="18" stroke="#85888E" stroke-width="1.2" />
+  <line x1="60" y1="9" x2="60" y2="15" stroke="#5F6470" stroke-width="1" />
+  <line x1="80" y1="9" x2="80" y2="15" stroke="#5F6470" stroke-width="1" />
+
+  <!-- Center index marker -->
+  <rect x="475" y="4" width="50" height="16" fill="#14171E" stroke="#3A4150" stroke-width="1" rx="2" />
+  <circle cx="488" cy="12" r="2.5" fill="#2457FF" />
+  <circle cx="512" cy="12" r="2.5" fill="#F05A28" />
+
+  <!-- Right tick cluster -->
+  <line x1="920" y1="9" x2="920" y2="15" stroke="#5F6470" stroke-width="1" />
+  <line x1="940" y1="9" x2="940" y2="15" stroke="#5F6470" stroke-width="1" />
+  <line x1="960" y1="6" x2="960" y2="18" stroke="#85888E" stroke-width="1.2" />
+</svg>
+

@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 280" width="100%" height="100%">
+  <defs>
+    <pattern id="flood-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#22262E" stroke-width="0.7" opacity="0.4" />
+    </pattern>
+    <linearGradient id="flood-blue" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2457FF" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#2457FF" stop-opacity="0.0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1000" height="280" fill="#101216" />
+  <rect width="1000" height="280" fill="url(#flood-grid)" />
+  <rect x="16" y="16" width="968" height="248" fill="none" stroke="#262B35" stroke-width="1" />
+
+  <!-- Corner registration ticks -->
+  <path d="M 10 24 L 22 24 M 16 18 L 16 30" stroke="#85888E" stroke-width="1.2" />
+  <path d="M 978 24 L 990 24 M 984 18 L 984 30" stroke="#85888E" stroke-width="1.2" />
+  <path d="M 10 256 L 22 256 M 16 250 L 16 262" stroke="#85888E" stroke-width="1.2" />
+  <path d="M 978 256 L 990 256 M 984 250 L 984 262" stroke="#85888E" stroke-width="1.2" />
+
+  <!-- Technical Header -->
+  <g transform="translate(36, 40)">
+    <text font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#2457FF" letter-spacing="1.5">FIELD SHEET 02 // SPATIAL RISK TOPOGRAPHY</text>
+    <text x="500" font-family="'JetBrains Mono', monospace" font-size="9" fill="#85888E" letter-spacing="1">SYSTEM: FLOODLENS // POSTGIS &amp; COPERNICUS DEM</text>
+    <line x1="0" y1="12" x2="928" y2="12" stroke="#262B35" stroke-width="1" />
+  </g>
+
+  <!-- Left Column: Contour Topography & Drainage Network -->
+  <g transform="translate(36, 75)" font-family="'JetBrains Mono', monospace">
+    <rect width="440" height="165" fill="#141820" stroke="#30363d" stroke-width="0.8" rx="2" />
+    
+    <g transform="translate(16, 20)">
+      <text font-size="10" font-weight="700" fill="#F05A28" letter-spacing="1">TOPOGRAPHIC &amp; NETWORK ELEVATION</text>
+      <text y="16" font-size="8.5" fill="#85888E">Copernicus 30m DEM · HAND Terrain Proxy · GCC SWD Outfalls</text>
+
+      <!-- Vector Contour Sketch Area -->
+      <g transform="translate(0, 28)">
+        <rect width="408" height="82" fill="#0C0E12" stroke="#232730" stroke-width="0.8" />
+        
+        <!-- Synthetic Contour Isohyets -->
+        <path d="M 10 65 Q 110 30, 210 50 T 400 20" fill="none" stroke="#2457FF" stroke-width="1.2" stroke-opacity="0.8" />
+        <path d="M 10 45 Q 120 15, 230 35 T 400 12" fill="none" stroke="#2457FF" stroke-width="0.9" stroke-dasharray="3,3" stroke-opacity="0.5" />
+        <path d="M 10 25 Q 130 5, 250 20 T 400 5" fill="none" stroke="#2457FF" stroke-width="0.7" stroke-opacity="0.3" />
+
+        <!-- Subsurface Stormwater Conduit Network Lines -->
+        <line x1="50" y1="60" x2="160" y2="40" stroke="#F05A28" stroke-width="1.8" />
+        <circle cx="50" cy="60" r="3" fill="#F05A28" />
+        <circle cx="160" cy="40" r="3" fill="#F05A28" />
+        
+        <line x1="160" y1="40" x2="280" y2="45" stroke="#F05A28" stroke-width="1.8" />
+        <circle cx="280" cy="45" r="3" fill="#F05A28" />
+
+        <line x1="280" y1="45" x2="370" y2="25" stroke="#F05A28" stroke-width="1.8" />
+        <circle cx="370" cy="25" r="4" fill="#00E599" stroke="#F2F0E9" stroke-width="1" />
+
+        <!-- Labels in Diagram -->
+        <text x="55" y="74" font-size="7.5" fill="#85888E">NODE N-01</text>
+        <text x="165" y="32" font-size="7.5" fill="#85888E">CULVERT C-12</text>
+        <text x="320" y="20" font-size="7.5" fill="#00E599">OUTFALL #4</text>
+      </g>
+
+      <!-- Metadata summary -->
+      <text y="128" font-size="8" fill="#85888E">HYDRAULIC FORMULA: <tspan fill="#F2F0E9">Q = C·I·A (Rational)</tspan> · <tspan fill="#F2F0E9">Manning Surcharge dy/dx</tspan></text>
+    </g>
+  </g>
+
+  <!-- Right Column: Twin Ward Catchment Comparison -->
+  <g transform="translate(500, 75)" font-family="'JetBrains Mono', monospace">
+    <rect width="464" height="165" fill="#141820" stroke="#30363d" stroke-width="0.8" rx="2" />
+    
+    <g transform="translate(18, 20)">
+      <text font-size="10" font-weight="700" fill="#F2F0E9" letter-spacing="1">DIFFERENTIAL CATCHMENT CONVEYANCE</text>
+      <text y="16" font-size="8.5" fill="#85888E">GCC Chennai Stormwater Network: 20 Segments · 21 Nodes · 4 Outfalls</text>
+
+      <!-- Twin Catchment Comparative Cards -->
+      <g transform="translate(0, 28)">
+        <!-- Resilient Catchment -->
+        <g transform="translate(0, 0)">
+          <rect width="206" height="48" fill="#111B17" stroke="#1D4A36" stroke-width="0.8" />
+          <text x="8" y="14" font-size="8" font-weight="700" fill="#3FB950">RESILIENT PROXY: WARD 101</text>
+          <text x="8" y="28" font-size="7.5" fill="#85888E">HAND Index: High Relief Gradient</text>
+          <text x="8" y="40" font-size="7.5" fill="#3FB950">Status: Free Gravity Outfall Flow</text>
+        </g>
+
+        <!-- Inundated Catchment -->
+        <g transform="translate(222, 0)">
+          <rect width="206" height="48" fill="#1F1515" stroke="#4A2020" stroke-width="0.8" />
+          <text x="8" y="14" font-size="8" font-weight="700" fill="#F85149">BOTTLENECK PROXY: WARD 104</text>
+          <text x="8" y="28" font-size="7.5" fill="#85888E">HAND Index: Depression Bowl</text>
+          <text x="8" y="40" font-size="7.5" fill="#F85149">Status: Tailwater Surcharge Alert</text>
+        </g>
+      </g>
+
+      <!-- AWS Hackathon Evaluation Stamp -->
+      <g transform="translate(0, 88)">
+        <rect width="428" height="48" fill="#181B22" stroke="#2457FF" stroke-width="1" />
+        <text x="12" y="18" font-size="8.5" font-weight="700" fill="#2457FF" letter-spacing="1">AWS ENVIRONMENTAL HACKATHON EVALUATION</text>
+        <text x="12" y="36" font-size="11" font-weight="800" fill="#F2F0E9">SCORED 27 / 30 MARKS</text>
+        <text x="210" y="36" font-size="8" fill="#85888E">· 203 TEST SUITES VERIFIED (PASSING)</text>
+      </g>
+    </g>
+  </g>
+</svg>

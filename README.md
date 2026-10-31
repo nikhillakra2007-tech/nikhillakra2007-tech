@@ -1,135 +1,206 @@
 <div align="center">
 
-<!-- HERO BANNER -->
-<img src="./assets/hero-studio.svg" alt="Nikhil Lakra — The Engineering Studio" width="100%" />
+<!-- ATLAS FRONTISPIECE PLATE -->
+<img src="./assets/atlas-hero.svg" alt="The Engineering Atlas // Nikhil Lakra" width="100%" />
 
 <br /><br />
 
-<!-- NAVIGATION PILLS -->
-<a href="https://myself-lyart-theta.vercel.app/"><b>Portfolio</b></a> &nbsp;•&nbsp;
-<a href="https://linkedin.com/in/nikhil-lakra"><b>LinkedIn</b></a> &nbsp;•&nbsp;
-<a href="https://github.com/nikhillakra2007-tech"><b>GitHub</b></a> &nbsp;•&nbsp;
-<a href="mailto:nikhillakra2007@gmail.com"><b>Contact</b></a>
+<!-- ARCHITECTURAL INDEX DIRECTORY -->
+<p align="center">
+  <a href="https://nikhil-lakra.vercel.app/"><b>[ 01 // PORTFOLIO ]</b></a> &nbsp;&nbsp;·&nbsp;&nbsp;
+  <a href="https://linkedin.com/in/nikhil-lakra-b4300a381"><b>[ 02 // LINKEDIN ]</b></a> &nbsp;&nbsp;·&nbsp;&nbsp;
+  <a href="https://github.com/nikhillakra2007-tech"><b>[ 03 // GITHUB ]</b></a> &nbsp;&nbsp;·&nbsp;&nbsp;
+  <a href="mailto:nikhillakra2007@gmail.com"><b>[ 04 // CONTACT ]</b></a>
+</p>
 
-<br /><br />
-
-<img src="./assets/editorial-divider.svg" alt="Divider" width="100%" />
+<img src="./assets/atlas-divider.svg" alt="Section Boundary" width="100%" />
 
 </div>
 
-## 01 / IDENTITY
+<br />
 
-> **"Full-stack developer building AI-powered products and reliable software systems."**
+```
+ATLAS IDENTIFIER    : NL-ENG-2026.04
+COORDINATES         : 26.9124° N, 75.7873° E [JAIPUR, RAJASTHAN]
+AFFILIATION         : MANIPAL UNIVERSITY JAIPUR // DEPT. OF COMPUTER SCIENCE & ENGINEERING ('29)
+RESEARCH DISCIPLINE : SYSTEMS ARCHITECTURE · DETERMINISTIC VERIFICATION · GEOSPATIAL COMPUTING
+STATUS              : ACTIVE FIELD EXPERIMENTATION
+```
+
+---
+
+## 01 // EXECUTIVE SUMMARY & DESIGN PHILOSOPHY
+
+> **"Deterministic code decides. The generative model only proposes."**
 > 
-> *Interested in the intersection of product engineering, intelligent systems, and infrastructure.*
+> *Software systems operating on high-consequence domains—capital allocation, municipal flood resilience, or automated code compilation—cannot tolerate stochastic ambiguity. I design and engineer products from first principles: mathematically verified data structures, strict runtime invariants, and defensible audit boundaries.*
 
-I am **Nikhil Lakra**, a developer and B.Tech student in Computer Science ('29) at Manipal University Jaipur. 
-
-My work centers on designing, engineering, and building complete software products from first principles. Rather than building isolated demos, I focus on the full lifecycle of software engineering: strict database schemas and transaction isolation, deterministic backend services, autonomous agentic AI workflows, and thoughtful user-facing product experiences.
-
----
-
-## 02 / SELECTED WORK
-
-A selection of three flagship systems engineered across financial architecture, geospatial cloud infrastructure, and autonomous DevSecOps.
-
-<br />
-
-### 01 · FINROQ — Core Accounting Backend & Personal Finance Engine
-
-<a href="https://github.com/nikhillakra2007-tech/finroq">
-  <img src="./assets/showcase-finroq.svg" alt="FINROQ Project Showcase" width="100%" />
-</a>
-
-* **Core Focus:** An AI-first personal finance platform engineered to make complex fiscal decisions transparent and verifiable.
-* **Engineering Highlights:**
-  * Eliminates IEEE-754 floating-point drift across 17 unified modules by enforcing strict arbitrary-precision `Python Decimal` arithmetic at the database transaction layer.
-  * Backed by DeepSeek-R1 analytical reasoning agents for contextual financial insights, Argon2id cryptographic password derivation, and immutable audit journals.
-  * Automated migration lifecycle managed through versioned Alembic revisions and 247/247 passing Pytest backend validation suites.
-* **Stack:** `Python Decimal` · `FastAPI` · `PostgreSQL 16` · `SQLAlchemy` · `Alembic` · `Next.js 14` · `Docker`
-* **Links:** [GitHub Repository](https://github.com/nikhillakra2007-tech/finroq) &nbsp;|&nbsp; [Live Application](https://finroq-app.vercel.app/)
-
-<br />
-
-### 02 · FloodLens — Geospatial Urban Hydrology & Intervention Engine
-
-<a href="https://github.com/nikhillakra2007-tech/FloodLens">
-  <img src="./assets/showcase-floodlens.svg" alt="FloodLens Project Showcase" width="100%" />
-</a>
-
-* **Core Focus:** An evidence-driven urban flood investigation platform that models counterfactual stormwater mechanisms before cloudburst events occur.
-* **Engineering Highlights:**
-  * Pairs inundated municipal catchments with resilient twin wards across elevation gradients, stormwater drain (SWD) conduit dimensions, and impervious surface ratios.
-  * Distributed serverless backend with stateless AWS Lambda workers executing chunked Digital Elevation Model (DEM) transforms and spatial buffering in PostGIS.
-  * Built with 100% reproducible AWS CloudFormation Infrastructure as Code (IaC) templates and calibrated against historical urban inundation data.
-  * **Evaluation Record:** Scored **27 / 30** in the *AWS Environmental Hackathon* (Idea & Impact: 8/8 · Execution: 4/4 · Design: 4/4).
-* **Stack:** `AWS Lambda` · `CloudFormation IaC` · `PostGIS` · `PostgreSQL` · `Python 3.12` · `Next.js 14` · `Docker`
-* **Links:** [GitHub Repository](https://github.com/nikhillakra2007-tech/FloodLens) &nbsp;|&nbsp; [Live Application](https://floodlens-app.vercel.app/)
-
-<br />
-
-### 03 · ProofStack — Autonomous DevSecOps & Code Repair Harness
-
-<a href="https://github.com/nikhillakra2007-tech/ProofStack">
-  <img src="./assets/showcase-proofstack.svg" alt="ProofStack Project Showcase" width="100%" />
-</a>
-
-* **Core Focus:** An autonomous DevSecOps and code repair verification engine enforcing the rule: *"Deterministic Code Decides; The Generative Model Only Proposes."*
-* **Engineering Highlights:**
-  * Guards pull requests with 8 zero-compromise compiler AST validation passes and 12-vector dynamic analysis (DAST) inside isolated microVM sandboxes.
-  * Couples NVIDIA Nemotron scoped repair loops with an immutable append-only HMAC-SHA256 Merkle evidence ledger to guarantee audit non-repudiation.
-  * Prevents stochastic LLM code hallucinations from reaching production environments without passing deterministic static and dynamic verification gates.
-* **Stack:** `Python 3.12` · `NVIDIA Nemotron` · `Compiler AST Parsing` · `MicroVM DAST` · `Merkle Trees` · `FastAPI` · `Next.js 14`
-* **Links:** [GitHub Repository](https://github.com/nikhillakra2007-tech/ProofStack) &nbsp;|&nbsp; [Live Cockpit](https://proofstack-cockpit.vercel.app/)
+I am **Nikhil Lakra**, a systems and full-stack software engineer based in Jaipur, India. My work focuses on building resilient end-to-end applications where computational rigor and thoughtful product interfaces intersect. Rather than surface-level wrappers, every project in this atlas is engineered around concrete domain constraints: double-entry ledger invariants, geospatial catchment elevation deltas, and multi-gate static compiler verification.
 
 <br />
 
 <div align="center">
-  <img src="./assets/editorial-divider.svg" alt="Divider" width="100%" />
+<img src="./assets/atlas-divider.svg" alt="Section Boundary" width="100%" />
 </div>
 
-## 03 / ENGINEERING APPROACH
-
-How I think about building software and systems:
-
 <br />
 
-<img src="./assets/architecture-diagram.svg" alt="System Architecture Approach Diagram" width="100%" />
+## 02 // THE THREE FIELD STUDIES (ARCHITECTURAL PLATES)
 
-<br />
-
-1. **Build complete systems, not disconnected demos.** Engineering value lives in complete lifecycles: clean data models, transaction isolation, error handling, performance bounds, and production deployment rather than throwaway prototypes.
-2. **Treat database design and backend architecture as first-class concerns.** Correct persistence boundaries (PostgreSQL, PostGIS spatial indexing, arbitrary-precision Decimal arithmetic, connection pooling) prevent architectural debt before user-facing layers are built.
-3. **Prioritize reliability, verification, and maintainability.** Generative models propose candidate changes; compiler ASTs, type systems, and deterministic test harnesses hold veto authority.
-4. **Combine user experience with technical depth.** A reliable distributed system deserves a clear, responsive interface. Latency bounds, visual hierarchy, and performance matter as much as backend algorithmic correctness.
-5. **Experiment with AI where it creates real utility.** Focus on scoped reasoning loops, structured tool execution, and deterministic validation where intelligent systems solve concrete problems.
+Each project below is documented as an autonomous field sheet with verified domain formulas, architectural constraints, and live production endpoints.
 
 ---
 
-## 04 / CURRENT EXPLORATION
+### FIELD SHEET 01 // FINROQ — PRECISION FINANCIAL ENGINE
+*High-Integrity Double-Entry Accounting & Ledger Verification Engine*
 
-Topics and architectures currently under active study and prototyping:
+<div align="center">
+<img src="./assets/atlas-finroq.svg" alt="FinRoq Field Sheet // Double-Entry Ledger Equations" width="100%" />
+</div>
 
-* **Autonomous Software Verification & Compiler ASTs:** Exploring deeper AST traversal passes and isolated sandboxes to safely analyze and constrain AI-generated code mutations.
-* **Agentic AI Orchestration:** Investigating multi-agent decomposition patterns, tool-calling validation, and verifiable execution pipelines.
-* **High-Throughput Streaming Telemetry:** Prototyping real-time GTFS-Realtime protocol ingestion with sub-150ms sliding-window headway calculations to detect transit bottlenecks before stoppages occur.
-* **Geospatial & Hydrological Modeling:** Refining counterfactual infrastructure intervention models with vector tile streaming and distributed elevation data pipelines.
+<br />
 
----
+```
+SPECIFICATION   : GAAP / IFRS COMPLIANT DOUBLE-ENTRY ENGINE
+INVARIANT       : ∑ Debits ≡ ∑ Credits  |  ∑ Assets ≡ ∑ Liabilities + ∑ Equity
+NUMERIC TYPE    : Arbitrary-Precision Fixed-Point Decimal (Zero IEEE-754 Floating-Point Drift)
+TRANSACTIONS    : ACID Isolation · Deterministic Idempotency Keys · Append-Only Audit Trail
+TEST COVERAGE   : 177 Unit Tests (31 Dedicated Finance Engine Tests Passing)
+STACK           : Next.js 14 · FastAPI · Python 3.12 · PostgreSQL · SQLAlchemy · TailwindCSS
+REPOSITORIES    : https://github.com/nikhillakra2007-tech/finroq
+DEPLOYMENT      : https://finroq-app.vercel.app/
+```
 
-## 05 / CONNECT
-
-Have an interesting problem to solve or something worth building? Let's connect.
-
-* **Portfolio:** [myself-lyart-theta.vercel.app](https://myself-lyart-theta.vercel.app/)
-* **LinkedIn:** [linkedin.com/in/nikhil-lakra](https://linkedin.com/in/nikhil-lakra)
-* **GitHub:** [github.com/nikhillakra2007-tech](https://github.com/nikhillakra2007-tech)
-* **Email:** [nikhillakra2007@gmail.com](mailto:nikhillakra2007@gmail.com)
+#### Core Architectural Mechanics
+- **Zero Float Drift Guarantee**: Standard 64-bit IEEE-754 floats introduce cumulative representation errors (`0.1 + 0.2 ≠ 0.3`). FinRoq enforces arbitrary-precision `Decimal` mathematics across all balance calculations, ledger postings, and reconciliation routines.
+- **Mathematical Dual-Entry Invariants**: Every financial transaction must satisfy the fundamental conservation theorem $\sum \text{Debits} - \sum \text{Credits} = 0$. Incomplete, single-sided, or asymmetric journal entries are rejected at the database transaction layer.
+- **Auditable Cryptographic Append-Log**: Historic ledger lines are strictly immutable; corrections are executed exclusively via dated countervailing journal adjustments, preserving an unbroken forensic transaction history.
 
 <br />
 
 <div align="center">
-  <img src="./assets/editorial-divider.svg" alt="Divider" width="100%" />
-  <br />
-  <sub>NIKHIL LAKRA // THE ENGINEERING STUDIO · 2026</sub>
+<img src="./assets/atlas-divider.svg" alt="Section Boundary" width="100%" />
+</div>
+
+<br />
+
+### FIELD SHEET 02 // FLOODLENS — SPATIAL RISK TOPOGRAPHY
+*Geospatial Hydrologic Inundation Modeling & Stormwater Catchment Analysis*
+
+<div align="center">
+<img src="./assets/atlas-floodlens.svg" alt="FloodLens Field Sheet // Elevation Gradients & Catchment Runoff" width="100%" />
+</div>
+
+<br />
+
+```
+SPECIFICATION   : MUNICIPAL STORMWATER DRAINAGE & INUNDATION ATTRIBUTION
+HYDROLOGIC MODEL: Rational Peak Runoff [ Q = C · I · A ] · Manning Surcharge dy/dx
+SPATIAL ENGINE  : Copernicus 30m DEM · Height Above Nearest Drainage (HAND) · PostGIS
+NETWORK SCOPE   : GCC SWD Network (Chennai Wards 101–104 · 20 Segments · 21 Nodes · 4 Outfalls)
+AWS RECOGNITION : Scored 27 / 30 in an AWS Hackathon (203 Verified Tests Passing)
+STACK           : Next.js 14 · FastAPI · AWS Lambda · PostgreSQL / PostGIS · Leaflet · GeoJSON
+REPOSITORIES    : https://github.com/nikhillakra2007-tech/FloodLens
+DEPLOYMENT      : https://floodlens-app.vercel.app/
+```
+
+#### Core Architectural Mechanics
+- **PostGIS Geospatial Contours**: Inundation surfaces and storm drain culverts are modeled using topological polygons and vector streams. Spatial queries calculate run-time intersection of precipitation plumes with low-lying municipal wards.
+- **Twin-Ward Catchment Differential**: Real-time comparative attribution between resilient catchments (Ward 101: high relief gradient, free gravity outfall) versus bottleneck catchments (Ward 104: depression bowl, tailwater surcharge alert).
+- **Serverless Hydrologic Telemetry**: AWS Lambda computes peak runoff vectors using digital elevation gradients, delivering instant risk assessment maps without cold-start state bottlenecks.
+
+<br />
+
+<div align="center">
+<img src="./assets/atlas-divider.svg" alt="Section Boundary" width="100%" />
+</div>
+
+<br />
+
+### FIELD SHEET 03 // PROOFSTACK — COMPILER VERIFICATION & DAST
+*Multi-Stage Code Verification Pipeline & MicroVM Isolation Engine*
+
+<div align="center">
+<img src="./assets/atlas-proofstack.svg" alt="ProofStack Field Sheet // AST Analysis & Compiler Gates" width="100%" />
+</div>
+
+<br />
+
+```
+SPECIFICATION   : AUTOMATED COMPILER AUDIT ENGINE // 8 DETERMINISTIC VERIFICATION GATES
+EXACT GATES     : G0: Pre-Gate Scanner  →  G1: Correctness  →  G2: Security (19 Probes)
+                  G3: Identity & Access  →  G4: Concurrency  →  G5: Performance
+                  G6: Resource Telemetry →  G7: Patch Hygiene
+DYNAMIC DAST    : 12 Automated Scanning Checks (D-01 to D-12) & 19 Targeted Security Probes
+ISOLATION       : Ephemeral Docker / MicroVM Sandboxing (< 14.2ms startup overhead)
+CRYPTOGRAPHY    : Append-Only SHA-256 Hash Chain with Canonical JSON (Bit-for-Bit Reproducibility)
+STACK           : Next.js · Python 3.12 · FastAPI · AST Parsers · MicroVM Sandboxing · TailwindCSS
+REPOSITORIES    : https://github.com/nikhillakra2007-tech/ProofStack
+DEPLOYMENT      : https://proofstack-cockpit.vercel.app/
+```
+
+#### Core Architectural Mechanics
+- **Deterministic AST Syntax Gateways**: Parses arbitrary LLM-generated or developer-submitted source code into Abstract Syntax Trees, evaluating formal safety bounds, illegal function invocations, and circular references prior to bytecode execution.
+- **Ephemeral Sandbox Containment**: Untrusted code snippets run in resource-capped ephemeral MicroVMs with strict memory bounds, CPU quota throttling, and zero network breakout capability.
+- **Cryptographic Evidence Sealing**: Verification verdicts and runtime execution telemetry are hashed into an immutable append-only SHA-256 hash chain with canonical JSON encoding, enabling deterministic third-party verification of audit receipts.
+
+<br />
+
+<div align="center">
+<img src="./assets/atlas-divider.svg" alt="Section Boundary" width="100%" />
+</div>
+
+<br />
+
+## 03 // METHODOLOGY: THE ENGINEERING PROTOCOL
+
+Every system in this repository is constructed through a deterministic, four-stage verification protocol:
+
+<div align="center">
+<img src="./assets/atlas-philosophy.svg" alt="Engineering Philosophy // Build Verify Measure Improve" width="100%" />
+</div>
+
+<br />
+
+| Phase | Operational Focus | Engineering Criteria |
+| :--- | :--- | :--- |
+| **01 // BUILD** | **Architectural Drafting** | Explicit typed schemas, zero hidden state mutation, domain boundaries modeled as algebraic data types. |
+| **02 // VERIFY** | **Formal Invariant Testing** | Syntax tree validation, fuzzing against boundary conditions, isolated microVM runtime execution. |
+| **03 // MEASURE** | **Empirical Profiling** | Sub-millisecond latency tracking, zero decimal precision drift, verified spatial queries. |
+| **04 // IMPROVE** | **Deterministic Hardening** | Iterative reduction of attack surfaces, cryptographic ledger sealing, continuous CI regression gates. |
+
+<br />
+
+<div align="center">
+<img src="./assets/atlas-divider.svg" alt="Section Boundary" width="100%" />
+</div>
+
+<br />
+
+## 04 // COLOPHON & DIRECT CHANNELS
+
+```
+DOCUMENT SPEC   : THE ENGINEERING ATLAS // VOL. I
+COMPOSITION     : PURE SVG FIELD PLATES · TECHNICAL DRAFTING SCHEMATICS · MARKDOWN GRID
+PALETTE         : CHARCOAL [#101216] · DRAFTING CREAM [#F2F0E9] · BLUEPRINT [#2457FF] · ORANGE [#F05A28]
+ENGINEER        : NIKHIL LAKRA
+LOCATION        : JAIPUR, RAJASTHAN, INDIA [26.9124° N, 75.7873° E]
+DIRECTORY       : PORTFOLIO (nikhil-lakra.vercel.app) · GITHUB (@nikhillakra2007-tech) · LINKEDIN (/in/nikhil-lakra-b4300a381)
+```
+
+<br />
+
+<div align="center">
+
+<p align="center">
+  <a href="https://nikhil-lakra.vercel.app/"><b>[ PORTFOLIO ]</b></a> &nbsp;&nbsp;·&nbsp;&nbsp;
+  <a href="https://linkedin.com/in/nikhil-lakra-b4300a381"><b>[ LINKEDIN ]</b></a> &nbsp;&nbsp;·&nbsp;&nbsp;
+  <a href="https://github.com/nikhillakra2007-tech"><b>[ GITHUB ]</b></a> &nbsp;&nbsp;·&nbsp;&nbsp;
+  <a href="mailto:nikhillakra2007@gmail.com"><b>[ EMAIL ]</b></a>
+</p>
+
+<br />
+
+<sub>© 2026 Nikhil Lakra. All system schematics, domain proofs, and field sheets independently authored.</sub>
+
 </div>
