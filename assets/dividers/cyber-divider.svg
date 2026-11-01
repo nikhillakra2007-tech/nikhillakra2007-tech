@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 36" width="100%" height="36">
+  <defs>
+    <linearGradient id="divGradLeft" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0" />
+      <stop offset="80%" stop-color="#a855f7" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+    <linearGradient id="divGradRight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c084fc" />
+      <stop offset="20%" stop-color="#a855f7" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#ff0055" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .kanji-divider {
+      font-family: 'Noto Sans JP', 'Hiragino Sans', sans-serif;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 6px;
+      fill: #38bdf8;
+    }
+  </style>
+
+  <!-- Left Line -->
+  <line x1="20" y1="18" x2="380" y2="18" stroke="url(#divGradLeft)" stroke-width="1.5" />
+  <circle cx="380" cy="18" r="2.5" fill="#a855f7" />
+
+  <!-- Center Crest -->
+  <g transform="translate(450, 18)">
+    <polygon points="0,-10 12,0 0,10 -12,0" fill="#0d0a1a" stroke="#c084fc" stroke-width="1.5" />
+    <polygon points="0,-5 6,0 0,5 -6,0" fill="#a855f7" />
+    <circle cx="0" cy="0" r="2" fill="#ffffff" />
+  </g>
+
+  <!-- Right Line -->
+  <circle cx="520" cy="18" r="2.5" fill="#c084fc" />
+  <line x1="520" y1="18" x2="880" y2="18" stroke="url(#divGradRight)" stroke-width="1.5" />
+</svg>
+
