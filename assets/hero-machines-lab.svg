@@ -1,0 +1,232 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Grid -->
+    <pattern id="lab-grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#161C24" stroke-width="0.8" />
+      <circle cx="30" cy="30" r="1" fill="#222B38" />
+    </pattern>
+
+    <!-- Linear Gradients -->
+    <linearGradient id="grad-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F131A" />
+      <stop offset="50%" stop-color="#0B0E12" />
+      <stop offset="100%" stop-color="#080A0D" />
+    </linearGradient>
+
+    <linearGradient id="grad-cyan-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#39D5E8" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#39D5E8" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="grad-orange-accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF784F" />
+      <stop offset="100%" stop-color="#D9532B" />
+    </linearGradient>
+
+    <linearGradient id="grad-robot-metal" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2C3644" />
+      <stop offset="50%" stop-color="#1A222B" />
+      <stop offset="100%" stop-color="#12171E" />
+    </linearGradient>
+
+    <linearGradient id="grad-robot-titanium" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#526071" />
+      <stop offset="60%" stop-color="#343E4B" />
+      <stop offset="100%" stop-color="#20262E" />
+    </linearGradient>
+
+    <filter id="glow-cyan" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="subtle-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <style>
+      @keyframes optical-pulse {
+        0%, 100% { opacity: 0.85; r: 6.5px; }
+        50% { opacity: 1; r: 8px; filter: drop-shadow(0 0 10px #39D5E8); }
+      }
+      @keyframes beam-sweep {
+        0%, 100% { opacity: 0.15; transform: rotate(-3deg); }
+        50% { opacity: 0.35; transform: rotate(3deg); }
+      }
+      .sensor-core { animation: optical-pulse 3.5s ease-in-out infinite; }
+      .laser-beam { transform-origin: 940px 185px; animation: beam-sweep 6s ease-in-out infinite; }
+    </style>
+  </defs>
+
+  <!-- Base Plate Frame -->
+  <rect width="1200" height="420" rx="8" fill="url(#grad-bg)" stroke="#1F2937" stroke-width="1.2" />
+  <rect width="1200" height="420" rx="8" fill="url(#lab-grid)" opacity="0.7" />
+
+  <!-- Technical Calibration Ticks & Hairlines -->
+  <line x1="40" y1="20" x2="1160" y2="20" stroke="#1A222D" stroke-width="1" />
+  <line x1="40" y1="400" x2="1160" y2="400" stroke="#1A222D" stroke-width="1" />
+  <line x1="740" y1="30" x2="740" y2="390" stroke="#19212C" stroke-width="1" stroke-dasharray="3,6" />
+
+  <!-- Corner Registration Marks -->
+  <path d="M 40 32 L 40 20 L 52 20" fill="none" stroke="#39D5E8" stroke-width="1.5" />
+  <path d="M 1160 32 L 1160 20 L 1148 20" fill="none" stroke="#39D5E8" stroke-width="1.5" />
+  <path d="M 40 388 L 40 400 L 52 400" fill="none" stroke="#39D5E8" stroke-width="1.5" />
+  <path d="M 1160 388 L 1160 400 L 1148 400" fill="none" stroke="#39D5E8" stroke-width="1.5" />
+
+  <!-- ================= LEFT COLUMN: IDENTITY & POSITIONING (62% width) ================= -->
+  <g transform="translate(60, 60)">
+    <!-- Identifier Badge -->
+    <rect x="0" y="-8" width="235" height="22" fill="#151A21" stroke="#25303D" stroke-width="1" rx="3" />
+    <circle cx="12" cy="3" r="3.5" fill="#39D5E8" />
+    <text x="24" y="7" font-family="'JetBrains Mono', Consolas, monospace" font-size="9" font-weight="700" fill="#39D5E8" letter-spacing="1.2">INTELLIGENT MACHINES LAB // 001</text>
+
+    <!-- Lab Telemetry / Origin Watermark -->
+    <text x="420" y="7" font-family="'JetBrains Mono', Consolas, monospace" font-size="9" fill="#5A6675" letter-spacing="1">FACILITY: 26.9124 N, 75.7873 E [JAIPUR]</text>
+
+    <!-- Main Title -->
+    <text x="0" y="72" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="44" font-weight="800" fill="#F1F3F5" letter-spacing="-0.5">NIKHIL LAKRA</text>
+
+    <!-- Headline -->
+    <text x="0" y="112" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="18" font-weight="600" fill="#B9C2CC">Building intelligent systems. <tspan fill="#39D5E8">Making complex things work.</tspan></text>
+
+    <!-- Supporting Statement -->
+    <text x="0" y="150" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13.5" fill="#9AA4B2">
+      <tspan x="0" dy="0">&quot;I build products across software, AI and infrastructure &#8212;</tspan>
+      <tspan x="0" dy="22">from the interface people use to the engineering underneath.&quot;</tspan>
+    </text>
+
+    <!-- Identity & Academic Line -->
+    <g transform="translate(0, 204)">
+      <rect x="0" y="-14" width="385" height="26" fill="#10151C" stroke="#1D2633" stroke-width="1" rx="2" />
+      <text x="12" y="3" font-family="'JetBrains Mono', Consolas, monospace" font-size="10" fill="#B9C2CC">
+        <tspan fill="#39D5E8">CSE '29</tspan> &#183; Manipal University Jaipur &#183; India
+      </text>
+    </g>
+
+    <!-- Navigation Pills Row -->
+    <g transform="translate(0, 252)">
+      <!-- Portfolio Pill -->
+      <g transform="translate(0, 0)">
+        <rect width="110" height="28" fill="#151A21" stroke="#39D5E8" stroke-width="1.2" rx="4" />
+        <circle cx="14" cy="14" r="3" fill="#39D5E8" />
+        <text x="26" y="18" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="700" fill="#F1F3F5">PORTFOLIO</text>
+      </g>
+      <!-- LinkedIn Pill -->
+      <g transform="translate(122, 0)">
+        <rect width="95" height="28" fill="#151A21" stroke="#25303D" stroke-width="1" rx="4" />
+        <text x="47" y="18" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="600" fill="#9AA4B2" text-anchor="middle">LINKEDIN</text>
+      </g>
+      <!-- GitHub Pill -->
+      <g transform="translate(229, 0)">
+        <rect width="85" height="28" fill="#151A21" stroke="#25303D" stroke-width="1" rx="4" />
+        <text x="42" y="18" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="600" fill="#9AA4B2" text-anchor="middle">GITHUB</text>
+      </g>
+      <!-- Contact Pill -->
+      <g transform="translate(326, 0)">
+        <rect width="90" height="28" fill="#151A21" stroke="#25303D" stroke-width="1" rx="4" />
+        <text x="45" y="18" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="600" fill="#9AA4B2" text-anchor="middle">CONTACT</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ================= RIGHT COLUMN: ORIGINAL ROBOTIC CHARACTER (38% width) ================= -->
+  <!-- AETHON-01: Intelligent Experimental Research Inspector -->
+  <g transform="translate(740, 20)">
+    <!-- Lab Enclosure Geometry / Background HUD Rings -->
+    <circle cx="220" cy="190" r="160" fill="none" stroke="#161D27" stroke-width="1" stroke-dasharray="4,8" />
+    <circle cx="220" cy="190" r="120" fill="none" stroke="#19232F" stroke-width="1" />
+    <circle cx="220" cy="190" r="80" fill="none" stroke="#1E2A39" stroke-width="0.8" stroke-dasharray="2,4" />
+
+    <!-- Angle Ticks -->
+    <line x1="60" y1="190" x2="75" y2="190" stroke="#39D5E8" stroke-width="1.5" opacity="0.7" />
+    <line x1="365" y1="190" x2="380" y2="190" stroke="#39D5E8" stroke-width="1.5" opacity="0.7" />
+    <line x1="220" y1="30" x2="220" y2="45" stroke="#39D5E8" stroke-width="1.5" opacity="0.7" />
+    <line x1="220" y1="335" x2="220" y2="350" stroke="#39D5E8" stroke-width="1.5" opacity="0.7" />
+
+    <!-- Optical Sensor Sweeping Cone -->
+    <path class="laser-beam" d="M 200 170 L 40 100 L 40 240 Z" fill="url(#grad-cyan-glow)" opacity="0.2" />
+
+    <!-- Technical Annotations Header -->
+    <g transform="translate(50, 20)">
+      <rect width="130" height="18" fill="#10151C" stroke="#1C2430" rx="2" />
+      <circle cx="8" cy="9" r="2.5" fill="#39D5E8" />
+      <text x="16" y="12.5" font-family="'JetBrains Mono', monospace" font-size="8" font-weight="600" fill="#8B98A5">CORE STATUS: NOMINAL</text>
+    </g>
+
+    <text x="365" y="35" font-family="'JetBrains Mono', monospace" font-size="8" fill="#5A6675" text-anchor="end">SENSOR ARTIFACT // SPEC. REV 4.2</text>
+    <text x="365" y="47" font-family="'JetBrains Mono', monospace" font-size="8" fill="#5A6675" text-anchor="end">AXIS: YAW +12 PITCH -4</text>
+
+    <!-- ====== ROBOT MECHANICAL ASSEMBLY (AETHON-01) ====== -->
+    <g transform="translate(220, 190)">
+      <!-- Shadow Underneath -->
+      <ellipse cx="0" cy="145" rx="95" ry="16" fill="#050709" opacity="0.8" />
+
+      <!-- Vertical Articulated Mast (Spine) -->
+      <path d="M -14 70 L -18 135 L 18 135 L 14 70 Z" fill="url(#grad-robot-metal)" stroke="#2B3542" stroke-width="1.2" />
+      <line x1="0" y1="75" x2="0" y2="130" stroke="#FF784F" stroke-width="1" opacity="0.6" stroke-dasharray="3,3" />
+
+      <!-- Dual Hydrolink Cylinders -->
+      <rect x="-38" y="85" width="12" height="45" rx="2" fill="url(#grad-robot-titanium)" stroke="#3D4A5B" stroke-width="1" />
+      <rect x="-35" y="95" width="6" height="28" rx="1" fill="#58687D" />
+      <rect x="26" y="85" width="12" height="45" rx="2" fill="url(#grad-robot-titanium)" stroke="#3D4A5B" stroke-width="1" />
+      <rect x="29" y="95" width="6" height="28" rx="1" fill="#58687D" />
+
+      <!-- Joint Rotator Node -->
+      <circle cx="0" cy="65" r="22" fill="#131821" stroke="#313C4C" stroke-width="1.5" />
+      <circle cx="0" cy="65" r="12" fill="url(#grad-robot-titanium)" stroke="#39D5E8" stroke-width="1" opacity="0.8" />
+      <circle cx="0" cy="65" r="4" fill="#0B0E12" />
+
+      <!-- Shoulder / Sensor Wings -->
+      <path d="M -75 25 L -45 10 L -25 25 L -25 45 L -65 52 Z" fill="url(#grad-robot-metal)" stroke="#333F50" stroke-width="1.2" />
+      <path d="M 75 25 L 45 10 L 25 25 L 25 45 L 65 52 Z" fill="url(#grad-robot-metal)" stroke="#333F50" stroke-width="1.2" />
+      <circle cx="-55" cy="32" r="2" fill="#5A6B7E" />
+      <circle cx="-40" cy="22" r="2" fill="#5A6B7E" />
+      <circle cx="55" cy="32" r="2" fill="#5A6B7E" />
+      <circle cx="40" cy="22" r="2" fill="#5A6B7E" />
+      <line x1="-70" y1="40" x2="-30" y2="40" stroke="#FF784F" stroke-width="1.5" />
+
+      <!-- Head Shell / Faceted Optical Housing -->
+      <polygon points="-50,-45 0,-68 50,-45 42,15 0,28 -42,15" fill="url(#grad-robot-metal)" stroke="#2C3746" stroke-width="1.5" />
+      <polygon points="-45,-40 0,-62 0,22 -38,10" fill="url(#grad-robot-titanium)" stroke="#3A485A" stroke-width="1" opacity="0.9" />
+      <polygon points="45,-40 0,-62 0,22 38,10" fill="#1B222C" stroke="#3A485A" stroke-width="1" opacity="0.9" />
+
+      <!-- Forehead Visor Bezel -->
+      <polygon points="-34,-25 34,-25 26,0 -26,0" fill="#0D1117" stroke="#3E4E63" stroke-width="1.5" />
+
+      <!-- Primary Cyan Sensor Aperture -->
+      <circle cx="-8" cy="-12" r="11" fill="#0A131A" stroke="#39D5E8" stroke-width="1.5" filter="url(#subtle-glow)" />
+      <circle cx="-8" cy="-12" r="7" fill="#123E4A" />
+      <circle class="sensor-core" cx="-8" cy="-12" r="5" fill="#39D5E8" filter="url(#glow-cyan)" />
+      <circle cx="-10" cy="-14" r="1.8" fill="#FFFFFF" />
+
+      <!-- Secondary Telemetry Lens -->
+      <circle cx="16" cy="-12" r="6" fill="#0A0E13" stroke="#4C5B6F" stroke-width="1" />
+      <circle cx="16" cy="-12" r="3.5" fill="#1C2936" />
+      <circle cx="16" cy="-12" r="2" fill="#FF784F" />
+
+      <!-- Micro LiDAR Scanner Array -->
+      <rect x="-22" y="-32" width="44" height="4" fill="#10151C" rx="1" stroke="#263342" stroke-width="0.8" />
+      <line x1="-16" y1="-30" x2="16" y2="-30" stroke="#39D5E8" stroke-width="1.2" stroke-dasharray="2,2" />
+
+      <!-- Lower Mechanical Jaw -->
+      <g transform="translate(0, 10)">
+        <path d="M -18 0 L 18 0 L 12 12 L -12 12 Z" fill="#0F141A" stroke="#2C3848" stroke-width="1" />
+        <line x1="-10" y1="3" x2="10" y2="3" stroke="#3F4F63" stroke-width="0.8" />
+        <line x1="-8" y1="6" x2="8" y2="6" stroke="#3F4F63" stroke-width="0.8" />
+        <line x1="-6" y1="9" x2="6" y2="9" stroke="#3F4F63" stroke-width="0.8" />
+      </g>
+
+      <text x="-25" y="42" font-family="'JetBrains Mono', monospace" font-size="6.5" font-weight="700" fill="#6E7D8F" letter-spacing="0.8">OPT-7X</text>
+    </g>
+
+    <text x="220" y="375" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#5A6675" text-anchor="middle" letter-spacing="1">UNIT: AETHON-01 // EXPERIMENTAL RESEARCH DRONE</text>
+    <text x="220" y="389" font-family="'JetBrains Mono', monospace" font-size="7.5" fill="#39D5E8" text-anchor="middle" letter-spacing="1.5">AUTONOMY: TIER-4 &#183; DUAL CORE INSPECTOR</text>
+  </g>
+</svg>
