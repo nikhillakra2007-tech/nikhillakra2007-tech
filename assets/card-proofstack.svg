@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" width="100%" height="100%">
+  <defs>
+    <linearGradient id="ps-card-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141923" />
+      <stop offset="100%" stop-color="#0E121A" />
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="340" rx="8" fill="url(#ps-card-bg)" stroke="#1F2937" stroke-width="1.2" />
+
+  <!-- Top Header Pill -->
+  <g transform="translate(24, 28)">
+    <rect width="185" height="22" fill="#10151E" stroke="#222E3E" rx="3" />
+    <circle cx="10" cy="11" r="3" fill="#4C8DFF" />
+    <text x="18" y="15" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="700" fill="#4C8DFF">SOFTWARE VERIFICATION</text>
+  </g>
+
+  <!-- Project Title -->
+  <text x="24" y="90" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="30" font-weight="900" fill="#F4F4F5">ProofStack</text>
+  <text x="24" y="118" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13.5" fill="#A1A1AA">
+    Automated software verification and security inspection.
+  </text>
+
+  <!-- Verification Ladder Console -->
+  <g transform="translate(24, 142)">
+    <rect width="552" height="150" fill="#0B0D12" stroke="#1D2533" rx="5" />
+    <rect width="552" height="24" fill="#10151F" rx="5" />
+    <circle cx="12" cy="12" r="3" fill="#4C8DFF" />
+    <text x="22" y="16" font-family="'JetBrains Mono', monospace" font-size="8" font-weight="700" fill="#71717A">8-GATE DETERMINISTIC LADDER</text>
+    <text x="540" y="16" font-family="'JetBrains Mono', monospace" font-size="8" fill="#E65353" text-anchor="end">STATUS: PASS</text>
+
+    <!-- Gates Grid (2 rows x 4 cols) -->
+    <g transform="translate(16, 36)">
+      <!-- Row 1 -->
+      <rect x="0" y="0" width="120" height="32" fill="#131B26" stroke="#4C8DFF" stroke-width="1" rx="3" />
+      <text x="8" y="14" font-family="'JetBrains Mono', monospace" font-size="7.5" fill="#4C8DFF">G0: Pre-Scan</text>
+      <text x="8" y="26" font-family="'JetBrains Mono', monospace" font-size="8" fill="#F4F4F5">[PASSED]</text>
+
+      <rect x="130" y="0" width="120" height="32" fill="#131B26" stroke="#4C8DFF" stroke-width="1" rx="3" />
+      <text x="8" y="14" font-family="'JetBrains Mono', monospace" font-size="7.5" fill="#4C8DFF">G1: Correctness</text>
+      <text x="8" y="26" font-family="'JetBrains Mono', monospace" font-size="8" fill="#F4F4F5">[PASSED]</text>
+
+      <rect x="260" y="0" width="120" height="32" fill="#131B26" stroke="#4C8DFF" stroke-width="1" rx="3" />
+      <text x="8" y="14" font-family="'JetBrains Mono', monospace" font-size="7.5" fill="#4C8DFF">G2: Security</text>
+      <text x="8" y="26" font-family="'JetBrains Mono', monospace" font-size="8" fill="#F4F4F5">19 PROBES</text>
+
+      <rect x="390" y="0" width="120" height="32" fill="#131B26" stroke="#4C8DFF" stroke-width="1" rx="3" />
+      <text x="8" y="14" font-family="'JetBrains Mono', monospace" font-size="7.5" fill="#4C8DFF">G3: Identity</text>
+      <text x="8" y="26" font-family="'JetBrains Mono', monospace" font-size="8" fill="#F4F4F5">[PASSED]</text>
+
+      <!-- Row 2 -->
+      <rect x="0" y="38" width="120" height="32" fill="#131B26" stroke="#4C8DFF" stroke-width="1" rx="3" />
+      <text x="8" y="52" font-family="'JetBrains Mono', monospace" font-size="7.5" fill="#4C8DFF">G4: Concurrency</text>
+      <text x="8" y="64" font-family="'JetBrains Mono', monospace" font-size="8" fill="#F4F4F5">[PASSED]</text>
+
+      <rect x="130" y="38" width="120" height="32" fill="#131B26" stroke="#4C8DFF" stroke-width="1" rx="3" />
+      <text x="8" y="52" font-family="'JetBrains Mono', monospace" font-size="7.5" fill="#4C8DFF">G5: Performance</text>
+      <text x="8" y="64" font-family="'JetBrains Mono', monospace" font-size="8" fill="#F4F4F5">[PASSED]</text>
+
+      <rect x="260" y="38" width="120" height="32" fill="#131B26" stroke="#4C8DFF" stroke-width="1" rx="3" />
+      <text x="8" y="52" font-family="'JetBrains Mono', monospace" font-size="7.5" fill="#4C8DFF">G6: Resource</text>
+      <text x="8" y="64" font-family="'JetBrains Mono', monospace" font-size="8" fill="#F4F4F5">[PASSED]</text>
+
+      <rect x="390" y="38" width="120" height="32" fill="#131B26" stroke="#E65353" stroke-width="1.2" rx="3" />
+      <text x="8" y="52" font-family="'JetBrains Mono', monospace" font-size="7.5" fill="#E65353">G7: Patch Hygiene</text>
+      <text x="8" y="64" font-family="'JetBrains Mono', monospace" font-size="8" fill="#E65353">[SIGNED]</text>
+    </g>
+
+    <line x1="20" y1="124" x2="532" y2="124" stroke="#162230" stroke-width="1" />
+    <text x="20" y="139" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#4C8DFF">EPHEMERAL MICROVM &amp;bull; 12 DAST PROBES &amp;bull; SHA-256 HASH CHAIN</text>
+  </g>
+</svg>

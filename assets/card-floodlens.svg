@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" width="100%" height="100%">
+  <defs>
+    <linearGradient id="fl-card-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141923" />
+      <stop offset="100%" stop-color="#0E121A" />
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="340" rx="8" fill="url(#fl-card-bg)" stroke="#1F2937" stroke-width="1.2" />
+
+  <!-- Top Header Pill -->
+  <g transform="translate(24, 28)">
+    <rect width="185" height="22" fill="#10151E" stroke="#222E3E" rx="3" />
+    <circle cx="10" cy="11" r="3" fill="#4C8DFF" />
+    <text x="18" y="15" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="700" fill="#4C8DFF">GEOSPATIAL INTELLIGENCE</text>
+  </g>
+
+  <!-- Project Title -->
+  <text x="24" y="90" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="30" font-weight="900" fill="#F4F4F5">FloodLens</text>
+  <text x="24" y="118" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13.5" fill="#A1A1AA">
+    Geospatial flood analysis and environmental intelligence.
+  </text>
+
+  <!-- Hydrological Contour Console -->
+  <g transform="translate(24, 142)">
+    <rect width="552" height="150" fill="#0B0D12" stroke="#1D2533" rx="5" />
+    <rect width="552" height="24" fill="#10151F" rx="5" />
+    <circle cx="12" cy="12" r="3" fill="#4C8DFF" />
+    <text x="22" y="16" font-family="'JetBrains Mono', monospace" font-size="8" font-weight="700" fill="#71717A">HYDROLOGICAL TOPOLOGY // CHENNAI</text>
+    <text x="540" y="16" font-family="'JetBrains Mono', monospace" font-size="8" fill="#E65353" text-anchor="end">AWS HACKATHON: 27/30</text>
+
+    <!-- Contour Wireframe Simulation -->
+    <g transform="translate(20, 40)">
+      <path d="M 10 35 Q 90 10 180 25 T 340 18 T 500 35" fill="none" stroke="#182A3E" stroke-width="1.2" />
+      <path d="M 10 60 Q 90 35 180 50 T 340 42 T 500 60" fill="none" stroke="#223C58" stroke-width="1.2" />
+      <path d="M 10 85 Q 90 60 180 75 T 340 68 T 500 85" fill="none" stroke="#2D5076" stroke-width="1.2" stroke-dasharray="3,3" />
+
+      <!-- Drainage Flow Vectors -->
+      <path d="M 60 25 L 150 50 L 280 65 L 420 85" fill="none" stroke="#4C8DFF" stroke-width="2" />
+      <circle cx="60" cy="25" r="3" fill="#4C8DFF" />
+      <circle cx="150" cy="50" r="3" fill="#4C8DFF" />
+      <circle cx="280" cy="65" r="3" fill="#4C8DFF" />
+      <circle cx="420" cy="85" r="4.5" fill="#E65353" />
+      <text x="435" y="89" font-family="'JetBrains Mono', monospace" font-size="8" font-weight="700" fill="#E65353">OUTFALL 04</text>
+    </g>
+
+    <line x1="20" y1="124" x2="532" y2="124" stroke="#162230" stroke-width="1" />
+    <text x="20" y="139" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#4C8DFF">COPERNICUS 30M DEM &amp;bull; HAND TERRAIN PROXIES &amp;bull; 203 TESTS</text>
+  </g>
+</svg>
